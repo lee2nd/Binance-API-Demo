@@ -19,7 +19,7 @@ klines = client.get_historical_klines(
                 klines_type  = HistoricalKlinesType.FUTURES    # choose the FUTURES 
                 )
 
-# you can hide following 3 lines, it shows the detailed information
+# you can hide following 3 lines, it only shows the detailed information
 df = pd.DataFrame(klines)
 df.columns = ['Open_time','open','high','low','close','volume','Close_time', 'Quote asset volume', 'number of trades', 'Taker buy base asset volume', 'Taker buy quote asset volume', 'Ignore']   
 print(df)
